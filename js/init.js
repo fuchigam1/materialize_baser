@@ -3,6 +3,7 @@
 		$('.button-collapse').sideNav();
 		$('.parallax').parallax();
 		$('.slider').slider();
+		$('.modal-trigger').leanModal();
 
 		/* 画像ポップアップ用 */
 		$("a[rel='colorbox']").colorbox({transition:"fade"});
