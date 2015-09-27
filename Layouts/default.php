@@ -11,10 +11,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 <?php $this->BcBaser->title() ?>
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <?php $this->BcBaser->css(array(
 	'materialize',
 	'style',
+	'adjustment',
 	'admin/colorbox/colorbox'
 ), array('media' => 'screen,projection')) ?>
 
@@ -35,94 +36,7 @@
 
 <?php $this->BcBaser->flash() ?>
 <?php if ($this->BcBaser->isHome()): ?>
-	<?php //$this->BcBaser->mainImage(array('all' => true, 'num' => 5, 'width' => "100%")) ?>
-	<div id="index-banner" class="parallax-container">
-		<div class="section no-pad-bot">
-			<div class="container">
-				<br><br>
-				<h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
-				<div class="row center">
-					<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-				</div>
-				<div class="row center">
-					<a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-				</div>
-				<br><br>
-			</div>
-		</div>
-		<div class="parallax">
-			<?php echo $this->BcBaser->getImg('background1.jpg', array('alt' => 'Unsplashed background img 1')) ?>
-		</div>
-	</div>
-
-
-	<div class="container">
-		<?php $this->BcBaser->content() ?>
-	</div>
-
-
-	<div class="parallax-container valign-wrapper">
-		<div class="section no-pad-bot">
-			<div class="container">
-				<div class="row center">
-				  <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-				</div>
-			</div>
-		</div>
-		<div class="parallax">
-			<?php echo $this->BcBaser->getImg('background2.jpg', array('alt' => 'Unsplashed background img 2')) ?>
-		</div>
-	</div>
-
-
-	<div class="container">
-		<div class="section"><!--   Icon Section   -->
-			<div class="row">
-				<div class="col s12 m6">
-					<div class="icon-block">
-					<h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-					<h5 class="center">Speeds up development</h5>
-					<?php $this->BcBaser->blogPosts('news', 3) ?>
-					</div>
-				</div>
-
-				<div class="col s12 m6">
-					<div class="icon-block">
-					<h2 class="center brown-text"><i class="material-icons">group</i></h2>
-					<h5 class="center">User Experience Focused</h5>
-					<?php $this->BcBaser->js('/feed/ajax/1') ?>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="container">
-		<div class="section">
-			<div class="row">
-				<div class="col s12 center">
-					<h3><i class="mdi-content-send brown-text"></i></h3>
-					<h4>Contact Us</h4>
-					<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="parallax-container valign-wrapper">
-		<div class="section no-pad-bot">
-			<div class="container">
-				<div class="row center">
-					<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-				</div>
-			</div>
-		</div>
-		<div class="parallax">
-			<?php echo $this->BcBaser->getImg('background3.jpg', array('alt' => 'Unsplashed background img 3')) ?>
-		</div>
-	</div>
+	<?php $this->BcBaser->element('home') ?>
 <?php else: ?>
 	<?php $this->BcBaser->crumbsList(); ?>
 	<div class="container">
