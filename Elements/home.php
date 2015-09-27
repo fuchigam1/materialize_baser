@@ -4,7 +4,14 @@
  *
  */
 ?>
-<?php //$this->BcBaser->mainImage(array('all' => true, 'num' => 5, 'width' => "100%")) ?>
+<?php
+/**
+ * element('slider') を有効化すると、スライダーが利用できます。
+ * - 画像はテーマ設定で設定する画像です。
+ */
+?>
+<?php //$this->BcBaser->element('slider') ?>
+
 <div id="index-banner" class="parallax-container">
 	<div class="section no-pad-bot">
 		<div class="container">

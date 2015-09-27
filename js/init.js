@@ -2,6 +2,7 @@
 	$(function(){
 		$('.button-collapse').sideNav();
 		$('.parallax').parallax();
+		$('.slider').slider();
 
 		/* 画像ポップアップ用 */
 		$("a[rel='colorbox']").colorbox({transition:"fade"});
@@ -28,8 +29,5 @@
 			selectMonths: true, // Creates a dropdown to control month
 			selectYears: 15 // Creates a dropdown of 15 years to control year
 		});
-
-		$("#MainImage").show();
-		$("#MainImage").bxSlider({mode:"fade", auto:true});
 	}); // end of document ready
 })(jQuery); // end of jQuery name space

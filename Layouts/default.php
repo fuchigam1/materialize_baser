@@ -19,13 +19,11 @@
 	'admin/colorbox/colorbox'
 ), array('media' => 'screen,projection')) ?>
 
-<?php $this->BcBaser->js(array('jquery-2.1.4.min.js')); ?>
-<?php $this->BcBaser->js(array('materialize')); ?>
-<?php $this->BcBaser->js(array('init')); ?>
-
 <?php $this->BcBaser->js(array(
-	'jquery.bxslider-4.12.min',
+	'jquery-2.1.4.min.js',
+	'materialize',
 	'admin/jquery.colorbox-min-1.4.5',
+	'init',
 )); ?>
 
 <?php $this->BcBaser->scripts() ?>
