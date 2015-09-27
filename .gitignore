@@ -1,0 +1,25 @@
+## Configuration and Temporary files
+Plugin/*
+!Plugin/empty
+
+## IDE files and folders
+.cache
+.project
+.settings
+nbproject
+.idea
+.DS_Store
+_notes
+.svn
+
+## Allow 'empty' files
+!empty
+
+## Project & DB
+Pages/*
+!Pages/empty
+files/*
+!files/empty
+
+.assets
+html/
