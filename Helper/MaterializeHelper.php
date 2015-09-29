@@ -5,6 +5,14 @@
  */
 class MaterializeHelper extends AppHelper
 {
+
+	/**
+	 * ヘルパー
+	 *
+	 * @var array
+	 */
+	public $helpers = array('BcBaser');
+
 	/**
 	 * コンテンツの指定IDの中身を返す
 	 * 
